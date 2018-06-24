@@ -1,0 +1,93 @@
+{
+  "name": "driver_management",
+  "plural": "drivers_managements",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "truck_d": {
+      "type": "string",
+      "id": true,
+      "generated": false,
+      "required": true
+    },
+    "driver": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "current_order": {
+      "type": "string",
+      "required": true
+    },
+    "sts": {
+      "type": "string",
+      "required": true
+    },
+    "shipper": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "consignee": {
+      "type": "string",
+      "required": true
+    },
+    "d_date": {
+      "type": "date",
+      "required": true
+    },
+    "d_time": {
+      "type": "date",
+      "required": true
+    },
+    "equip_type": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "number",
+      "required": true
+    },
+    "nextel_id": {
+      "type": "number",
+      "required": true
+    },
+    "truck": {
+      "type": "string",
+      "required": true
+    },
+    "sft": {
+      "type": "string",
+      "required": true
+    },
+    "haz": {
+      "type": "string",
+      "required": true
+    },
+    "lic_exp": {
+      "type": "string",
+      "required": true
+    },
+    "ins_exp": {
+      "type": "string",
+      "required": true
+    },
+    "med_exp": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,132 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Email": {
+    "dataSource": "myEmailDataSource",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "tbl_state": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "tbl_city": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "tbl_customer_master": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "tbl_driver_master": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "tbl_route_master": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "tbl_ordertype_master": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "tbl_pass_security_questions": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "tbl_vendor_master": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "tbl_vehicle_master": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "container_management": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "customer_management": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "driver_management": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "location_management": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "deadline": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "chassis_management": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "accessorial_charges": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "general_route_rates": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "general_driver_rates": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "user_management": {
+    "dataSource": "mysqlDs",
+    "public": true,
+    "options": {}
+  },
+  "order": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "invoice": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "dispatch": {
+    "dataSource": "mysqlDs",
+    "public": true
+  }
+}

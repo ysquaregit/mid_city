@@ -1,0 +1,54 @@
+{
+  "name": "tbl_vendor_master",
+  "plural": "tbl_vendors",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "record_id": {
+      "type": "number"
+    },
+    "vendor_id": {
+      "type": "string",
+      "id": true,
+      "generated": false,
+      "required": true
+    },
+    "vendor_name": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "vehicle_id": {
+      "type": "number",
+      "required": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "zip_code": {
+      "type": "string",
+      "required": true
+    },
+    "city_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tbl_vendor_master": {
+      "type": "belongsTo",
+      "model": "tbl_city",
+      "foreignKey": "city_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,31 @@
+{
+  "name": "tbl_state",
+  "plural": "tbl_states",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "state_code": {
+      "type": "string",
+      "id": true,
+      "generated": false,
+      "required": true
+    },
+    "state_name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tbl_cities": {
+      "type": "hasMany",
+      "model": "tbl_city",
+      "foreignKey": "state_code"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

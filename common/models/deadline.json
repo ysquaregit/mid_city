@@ -1,0 +1,33 @@
+{
+  "name": "deadline",
+  "plural": "deadlines",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "id": true,
+      "generated": false,
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "d_interval": {
+      "type": "string",
+      "required": true
+    },
+    "d_value": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

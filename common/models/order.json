@@ -1,0 +1,134 @@
+{
+  "name": "order",
+  "plural": "orders",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "order": {
+      "type": "number",
+      "required": true,
+      "id": true,
+      "generated": false,
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "driver": {
+      "type": "string",
+      "required": true
+    },
+    "haz": {
+      "type": "string",
+      "required": true
+    },
+    "con_status": {
+      "type": "string",
+      "required": true
+    },
+    "size": {
+      "type": "number",
+      "required": true
+    },
+    "leg": {
+      "type": "number",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "eqp_type": {
+      "type": "string",
+      "required": true
+    },
+    "sch_pu": {
+      "type": "date",
+      "required": true
+    },
+    "time": {
+      "type": "date",
+      "required": true
+    },
+    "pickup": {
+      "type": "string",
+      "required": true
+    },
+    "pu_zip": {
+      "type": "number",
+      "required": true
+    },
+    "delivery": {
+      "type": "string",
+      "required": true
+    },
+    "dl_zip": {
+      "type": "number",
+      "required": true
+    },
+    "sch_dl": {
+      "type": "date",
+      "required": true
+    },
+    "to": {
+      "type": "date",
+      "required": true
+    },
+    "from": {
+      "type": "date",
+      "required": true
+    },
+    "container": {
+      "type": "string",
+      "required": true
+    },
+    "chassis": {
+      "type": "string",
+      "required": true
+    },
+    "rail_cut": {
+      "type": "string",
+      "required": true
+    },
+    "customer": {
+      "type": "string",
+      "required": true
+    },
+    "pdm": {
+      "type": "string",
+      "required": true
+    },
+    "dmg": {
+      "type": "string",
+      "required": true
+    },
+    "chs": {
+      "type": "string",
+      "required": true
+    },
+    "pu_ref": {
+      "type": "string",
+      "required": true
+    },
+    "ll": {
+      "type": "string",
+      "required": true
+    },
+    "miles": {
+      "type": "number",
+      "required": true
+    },
+    "chs_days": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

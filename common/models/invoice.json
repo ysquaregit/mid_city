@@ -1,0 +1,218 @@
+{
+  "name": "invoice",
+  "plural": "invoices",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "order_i": {
+      "type": "number",
+      "required": true,
+      "id": true,
+      "generated": false,
+      "required": true
+    },
+    "order_sts": {
+      "type": "string",
+      "required": true
+    },
+    "driver": {
+      "type": "string",
+      "required": true
+    },
+    "haz": {
+      "type": "string",
+      "required": true
+    },
+    "con_sts": {
+      "type": "string",
+      "required": true
+    },
+    "size": {
+      "type": "number",
+      "required": true
+    },
+    "leg": {
+      "type": "number",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "equip_type": {
+      "type": "string",
+      "required": true
+    },
+    "sch_pu": {
+      "type": "date",
+      "required": true
+    },
+    "time": {
+      "type": "string",
+      "required": true
+    },
+    "pickup": {
+      "type": "String",
+      "required": true
+    },
+    "pu_zip": {
+      "type": "number",
+      "required": true
+    },
+    "delivery": {
+      "type": "string",
+      "required": true
+    },
+    "dl_zip": {
+      "type": "number",
+      "required": true
+    },
+    "sch_dl": {
+      "type": "date",
+      "required": true
+    },
+    "from": {
+      "type": "string",
+      "required": true
+    },
+    "to": {
+      "type": "string",
+      "required": true
+    },
+    "container": {
+      "type": "string",
+      "required": true
+    },
+    "chassis": {
+      "type": "string",
+      "required": true
+    },
+    "rail_cut": {
+      "type": "string",
+      "required": true
+    },
+    "customer": {
+      "type": "string",
+      "required": true
+    },
+    "pdm": {
+      "type": "string",
+      "required": true
+    },
+    "dmg": {
+      "type": "string",
+      "required": true
+    },
+    "chs": {
+      "type": "string",
+      "required": true
+    },
+    "pu_ref": {
+      "type": "string",
+      "required": true
+    },
+    "ll": {
+      "type": "string",
+      "required": true
+    },
+    "miles": {
+      "type": "number",
+      "required": true
+    },
+    "chs_days": {
+      "type": "number",
+      "required": true
+    },
+    "truck_1": {
+      "type": "string",
+      "required": true
+    },
+    "driver_1": {
+      "type": "string",
+      "required": true
+    },
+    "name_1": {
+      "type": "string",
+      "required": true
+    },
+    "current_order1": {
+      "type": "string",
+      "required": true
+    },
+    "sts1": {
+      "type": "string",
+      "required": true
+    },
+    "type1": {
+      "type": "string",
+      "required": true
+    },
+    "shipper1": {
+      "type": "string",
+      "required": true
+    },
+    "consignee1": {
+      "type": "string",
+      "required": true
+    },
+    "city1": {
+      "type": "string",
+      "required": true
+    },
+    "date1": {
+      "type": "date",
+      "required": true
+    },
+    "time1": {
+      "type": "date",
+      "required": true
+    },
+    "euiptype1": {
+      "type": "string",
+      "required": true
+    },
+    "phone1": {
+      "type": "number",
+      "required": true
+    },
+    "nextel_id": {
+      "type": "number",
+      "required": true
+    },
+    "truck1": {
+      "type": "string",
+      "required": true
+    },
+    "sft1": {
+      "type": "string",
+      "required": true
+    },
+    "haz1": {
+      "type": "string",
+      "required": true
+    },
+    "lic_exp1": {
+      "type": "date",
+      "required": true
+    },
+    "ins_exp1": {
+      "type": "date",
+      "required": true
+    },
+    "med_exp1": {
+      "type": "date",
+      "required": true
+    },
+    "pay1": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

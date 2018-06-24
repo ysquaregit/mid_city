@@ -1,0 +1,36 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysqlDs": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "midcities",
+    "password": "",
+    "name": "mysqlDs",
+    "user": "root",
+    "connector": "mysql",
+    "connectTimeout": 30000
+  },
+  "myEmailDataSource": {
+    "name": "myEmailDataSource",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "testmidcities@gmail.com",
+          "pass": "midcity123"
+        }
+      }
+    ],
+    "connector": "mail"
+  }
+}

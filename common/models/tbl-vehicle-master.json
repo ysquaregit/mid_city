@@ -1,0 +1,32 @@
+{
+  "name": "tbl_vehicle_master",
+  "plural": "tbl_vehicles",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "record_id": {
+      "type": "number"
+    },
+    "vehicle_id": {
+      "type": "string",
+      "id": true,
+      "generated": false,
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "number": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

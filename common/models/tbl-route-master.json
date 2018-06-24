@@ -1,0 +1,41 @@
+{
+  "name": "tbl_route_master",
+  "plural": "tbl_routes",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "record_id": {
+      "type": "number",
+      "id": true,
+      "generated": false,
+      "required": true
+    },
+    "route_id": {
+      "type": "string",
+      "required": true
+    },
+    "cust_id": {
+      "type": "string",
+      "required": true
+    },
+    "des_loc": {
+      "type": "string",
+      "required": true
+    },
+    "rate": {
+      "type": "number",
+      "required": true
+    },
+    "distance": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

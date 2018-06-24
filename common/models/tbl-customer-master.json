@@ -1,0 +1,71 @@
+{
+  "name": "tbl_customer_master",
+  "plural": "tbl_customers",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "record_id": {
+      "type": "number",
+      "required": true
+    },
+    "cust_id": {
+      "type": "number",
+      "id": true,
+      "generated": false,
+      "required": true
+    },
+    "title_code": {
+      "type": "string",
+      "required": true
+    },
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "middle_name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "gender": {
+      "type": "number",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "zip_code": {
+      "type": "string",
+      "required": true
+    },
+    "state_code": {
+      "type": "string",
+      "required": true
+    },
+    "contact_number": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tbl_customers": {
+      "type": "belongsTo",
+      "model": "tbl_city",
+      "foreignKey": "city_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

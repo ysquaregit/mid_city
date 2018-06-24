@@ -1,0 +1,50 @@
+{
+  "name": "tbl_city",
+  "plural": "tbl_cities",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "city_id": {
+      "type": "number",
+      "id": true,
+      "generated": false,
+      "required": true
+    },
+    "city_code": {
+      "type": "string",
+      "required": true
+    },
+    "city_name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tbl_cities": {
+      "type": "belongsTo",
+      "model": "tbl_state",
+      "foreignKey": "state_code"
+    },
+    "tblCustomerMasters": {
+      "type": "hasMany",
+      "model": "tbl_customer_master",
+      "foreignKey": "city_id"
+    },
+    "tblDriverMasters": {
+      "type": "hasMany",
+      "model": "tbl_driver_master",
+      "foreignKey": "city_id"
+    },
+    "tblVendorMasters": {
+      "type": "hasMany",
+      "model": "tbl_vendor_master",
+      "foreignKey": "city_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

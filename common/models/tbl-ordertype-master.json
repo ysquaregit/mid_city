@@ -1,0 +1,29 @@
+{
+  "name": "tbl_ordertype_master",
+  "plural": "tbl_ordertypes",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "record_id": {
+      "type": "number",
+      "id": true,
+      "generated": false,
+      "required": true
+    },
+    "order_type": {
+      "type": "string",
+      "required": true
+    },
+    "order_type_cat": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

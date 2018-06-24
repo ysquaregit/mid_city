@@ -1,0 +1,37 @@
+{
+  "name": "user_management",
+  "plural": "user_managements",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "restrictResetPasswordTokenScope": true,
+  "emailVerificationRequired": true,
+  "properties": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string",
+      "required": true
+    },
+    "permissions": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}
