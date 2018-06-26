@@ -10,10 +10,12 @@
   "emailVerificationRequired": true,
   "properties": {
     "first_name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "last_name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "role": {
       "type": "string",
@@ -27,10 +29,10 @@
   "relations": {},
   "acls": [
     {
-      "accessType": "*",
       "principalType": "ROLE",
-      "principalId": "$unauthenticated",
-      "permission": "DENY"
+      "principalId": "$everyone",
+      "accessType": "READ",
+      "permission": "ALLOW"
     }
   ],
   "methods": {}
