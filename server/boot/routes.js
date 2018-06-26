@@ -17,7 +17,7 @@ module.exports = function(app) {
   app.get('/verified', function(req, res, next) {
   //res.render('verified');
   //if (!req.accessToken) return res.sendStatus(401);
-  res.redirect('http://192.168.43.192:8080'+'?access_token='+req.accessToken);
+  res.redirect('http://192.168.43.192:8080');
 });
 
   //log a user in

@@ -4,15 +4,15 @@
     "connector": "memory"
   },
   "mysqlDs": {
-    "host": "localhost",
+    "host": "192.71.225.57",
     "port": 3306,
     "url": "",
     "database": "midcities",
-    "password": "",
+    "password": "shreyas@49",
     "name": "mysqlDs",
-    "user": "root",
+    "user": "tmsadmin",
     "connector": "mysql",
-    "connectTimeout": 30000
+    "connectTimeout": 100000
   },
   "myEmailDataSource": {
     "name": "myEmailDataSource",

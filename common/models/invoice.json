@@ -9,7 +9,6 @@
   "properties": {
     "order_i": {
       "type": "number",
-      "required": true,
       "id": true,
       "generated": false,
       "required": true

@@ -128,5 +128,13 @@
   "dispatch": {
     "dataSource": "mysqlDs",
     "public": true
+  },
+  "role": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "role-mapping": {
+    "dataSource": "mysqlDs",
+    "public": true
   }
 }
