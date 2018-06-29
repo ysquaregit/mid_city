@@ -37,7 +37,7 @@ module.exports = function(Usermanagement) {
           to: userInstance.email,
           from: senderAddress,
           subject: 'Thanks for registering.',
-          redirect: 'http://192.168.0.106:8080'+'?access_token='+ accessToken.id,
+          redirect: 'http://192.168.0.101:8080'+'?access_token='+ accessToken.id,
           user: Usermanagement,
         };
         user.verify(options, function(err, response, next) {
@@ -64,7 +64,7 @@ module.exports = function(Usermanagement) {
       var url = 'http://' + config.host + ':' + config.port + '/reset-password';
       var html = 'Click <a href="' + url + '?access_token=' +
           info.accessToken.id + '">here</a> to reset your password';
-      Usermanagement.passwordreset = false;
+    //  Usermanagement.passwordreset = false;
       console.log(Usermanagement);
       console.log(Usermanagement.app.models.user_management);
       Usermanagement.app.models.Email.send({
@@ -166,7 +166,12 @@ module.exports = function(Usermanagement) {
 
   //render UI page after password reset
   Usermanagement.afterRemote('setPassword', function(context, userInstance, next) {
-    Usermanagement.passwordreset = true;
-    console.log("Password set");
+  //  Usermanagement.passwordreset = true;
+  context.res.render('response', {
+     title: 'Password reset success',
+     content: 'Your password has been reset successfully',
+     redirectTo: '/',
+     redirectToLinkText: 'Log in'
+   });
   });
 };

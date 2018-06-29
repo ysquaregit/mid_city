@@ -15,7 +15,7 @@ module.exports = function(app) {
 
     //verified
     app.get('/verified', function(req, res, next) {
-        res.redirect('http://192.168.43.192:8080');
+        res.redirect('http://192.168.0.101:8080');
     });
 
     //log a user in
@@ -79,6 +79,6 @@ module.exports = function(app) {
     //show password reset form
     app.get('/reset-password', function(req, res, next) {
       if (!req.accessToken) return res.sendStatus(401);
-         res.redirect('http://192.168.43.192:8080'+'?access_token='+req.accessToken.id);
+         res.redirect('http://192.168.0.101:8080'+'?access_token='+req.accessToken.id);
     });
 };

@@ -129,5 +129,65 @@
   "validations": [],
   "relations": {},
   "acls": [],
-  "methods": {}
+  "methods": {
+    "createNeworder": {
+      "accepts": [
+        {
+          "arg": "body",
+          "type": "object",
+          "required": true,
+          "description": "Create a new order to save and dispatch.",
+          "http": {
+            "source": "body"
+          },
+          "default": {
+            "order": "number",
+            "status": "string",
+            "driver": "string",
+            "haz": "string",
+            "con_status": "string",
+            "size": "number",
+            "leg": "number",
+            "type":"string",
+            "eqp_type": "string",
+            "sch_pu": "date",
+            "time": "date",
+            "pickup": "string",
+            "pu_zip": "number",
+            "delivery": "string",
+            "dl_zip": "number",
+            "sch_dl": "date",
+            "to": "date",
+            "from": "date",
+            "container": "string",
+            "chassis": "string",
+            "rail_cut": "string",
+            "customer": "string",
+            "pdm": "string",
+            "dmg": "string",
+            "chs": "string",
+            "pu_ref": "string",
+            "ll": "string",
+            "miles": "number",
+            "chs_days": "number"
+         }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "newOrder",
+          "type": "object",
+          "root": true,
+          "description": "Save and Dispatch the new order entry"
+        }
+      ],
+      "description": "Create a new order to save and dispatch.",
+      "http": [
+        {
+          "path": "/saveanddispatch",
+          "verb": "post"
+        }
+      ]
+    }
+  }
 }
