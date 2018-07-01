@@ -4,13 +4,13 @@
     "connector": "memory"
   },
   "mysqlDs": {
-    "host": "198.71.225.57",
+    "host": "localhost",
     "port": 3306,
     "url": "",
     "database": "midcities",
-    "password": "shreyas@49",
+    "password": "",
     "name": "mysqlDs",
-    "user": "tmsadmin",
+    "user": "root",
     "connector": "mysql",
     "connectTimeout": 30000
   },

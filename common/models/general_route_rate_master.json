@@ -1,0 +1,40 @@
+{
+  "name": "general_route_rate_master",
+  "plural": "general_route_rates",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "route_id": {
+      "type": "number",
+      "id": true,
+      "generated": false
+    },
+    "pick_up": {
+      "type": "string",
+      "required": true
+    },
+    "delivery": {
+      "type": "string",
+      "required": true
+    },
+    "order_type": {
+      "type": "string",
+      "required": true
+    },
+    "miles": {
+      "type": "number",
+      "required": true
+    },
+    "rate": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

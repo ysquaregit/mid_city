@@ -1,0 +1,40 @@
+{
+  "name": "route_master",
+  "plural": "routes",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "route_id": {
+      "type": "number",
+      "id": true,
+      "generated": false
+    },
+    "cust_id": {
+      "type": "number",
+      "required": true
+    },
+    "start_loc": {
+      "type": "string",
+      "required": true
+    },
+    "des_loc": {
+      "type": "string",
+      "required": true
+    },
+    "rate": {
+      "type": "number",
+      "required": true
+    },
+    "distance": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

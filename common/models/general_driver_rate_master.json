@@ -1,0 +1,27 @@
+{
+  "name": "general_driver_rate_master",
+  "plural": "general_driver_rates",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "leg_type": {
+      "type": "string",
+      "required": true
+    },
+    "driver_type": {
+      "type": "string",
+      "required": true
+    },
+    "rate_per_mile": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

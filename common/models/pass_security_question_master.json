@@ -1,0 +1,25 @@
+{
+  "name": "pass_security_question_master",
+  "plural": "pass_security_questions",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "pass_ques_id": {
+      "type": "number",
+      "id": true,
+      "generated": false,
+      "required": true
+    },
+    "pass_question": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

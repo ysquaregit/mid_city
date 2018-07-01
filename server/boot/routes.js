@@ -15,7 +15,7 @@ module.exports = function(app) {
 
     //verified
     app.get('/verified', function(req, res, next) {
-        res.redirect('http://192.168.0.101:8080');
+        res.redirect('http://localhost:4200');
     });
 
     //log a user in
@@ -29,7 +29,7 @@ module.exports = function(app) {
             res.render('reponseToTriggerEmail', {
               title: 'Login failed',
               content: err,
-              redirectToEmail: '/api/user_managements/'+ err.details.userId + '/verify',
+              redirectToEmail: '/api/users/'+ err.details.userId + '/verify',
               redirectTo: '/',
               redirectToLinkText: 'Click here',
               userId: err.details.userId
@@ -47,7 +47,7 @@ module.exports = function(app) {
         res.render('home', {
           email: req.body.email,
           accessToken: token.id,
-          redirectUrl: '/api/user_managements/change-password?access_token=' + token.id
+          redirectUrl: '/api/users/change-password?access_token=' + token.id
         });
       });
     });
@@ -79,6 +79,6 @@ module.exports = function(app) {
     //show password reset form
     app.get('/reset-password', function(req, res, next) {
       if (!req.accessToken) return res.sendStatus(401);
-         res.redirect('http://192.168.0.101:8080'+'?access_token='+req.accessToken.id);
+         res.redirect('http://localhost:4200'+'?access_token='+req.accessToken.id);
     });
 };

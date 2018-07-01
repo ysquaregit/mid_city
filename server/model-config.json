@@ -40,88 +40,23 @@
     "dataSource": "db",
     "public": false
   },
-  "tbl_state": {
+  "accessorial_charge_master": {
     "dataSource": "mysqlDs",
     "public": true
   },
-  "tbl_city": {
+  "chassis_master": {
     "dataSource": "mysqlDs",
     "public": true
   },
-  "tbl_customer_master": {
+  "city_master": {
     "dataSource": "mysqlDs",
     "public": true
   },
-  "tbl_driver_master": {
+  "container_master": {
     "dataSource": "mysqlDs",
     "public": true
   },
-  "tbl_route_master": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "tbl_ordertype_master": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "tbl_pass_security_questions": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "tbl_vendor_master": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "tbl_vehicle_master": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "container_management": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "customer_management": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "driver_management": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "location_management": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "deadline": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "chassis_management": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "accessorial_charges": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "general_route_rates": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "general_driver_rates": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "user_management": {
-    "dataSource": "mysqlDs",
-    "public": true,
-    "options": {}
-  },
-  "order": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "invoice": {
+  "customer_master": {
     "dataSource": "mysqlDs",
     "public": true
   },
@@ -129,11 +64,72 @@
     "dataSource": "mysqlDs",
     "public": true
   },
-  "role": {
+  "drivertype_master": {
     "dataSource": "mysqlDs",
     "public": true
   },
-  "role-mapping": {
+  "driver_master": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "general_route_rate_master": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "general_driver_rate_master": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "invoice": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "legtype_master": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "leg_mgmt": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "locationtype_master": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "location_master": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "ordertype_master": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "order_mgmt": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "pass_security_question_master": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "route_master": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "state_master": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "user_master": {
+    "dataSource": "mysqlDs",
+    "public": true,
+    "options": {}
+  },
+  "vendor_master": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "vehicle_master": {
     "dataSource": "mysqlDs",
     "public": true
   }

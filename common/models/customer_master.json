@@ -1,0 +1,82 @@
+{
+  "name": "customer_master",
+  "plural": "customers",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "cust_id": {
+      "type": "number",
+      "id": true,
+      "generated": false
+    },
+    "business_name": {
+      "type": "string",
+      "required": true
+    },
+    "b_address": {
+      "type": "string",
+      "required": true
+    },
+    "b_door_number": {
+      "type": "number"
+    },
+    "b_street": {
+      "type": "string"
+    },
+    "b_city": {
+      "type": "string"
+    },
+    "b_zip_code": {
+      "type": "number"
+    },
+    "b_state": {
+      "type": "string"
+    },
+    "p_address": {
+      "type": "string",
+      "required": true
+    },
+    "p_door_number": {
+      "type": "number"
+    },
+    "p_street": {
+      "type": "string"
+    },
+    "p_city": {
+      "type": "string"
+    },
+    "p_zip_code": {
+      "type": "number"
+    },
+    "p_state": {
+      "type": "string"
+    },
+    "point_of_contact": {
+      "type": "string",
+      "required": true
+    },
+    "poc_phone": {
+      "type": "number",
+      "required": true
+    },
+    "business_phone": {
+      "type": "number",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "fax": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

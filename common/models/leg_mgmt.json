@@ -1,0 +1,72 @@
+{
+  "name": "leg_mgmt",
+  "plural": "legs",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "leg_id": {
+      "type": "number",
+      "id": true,
+      "generated": false
+    },
+    "order_id": {
+      "type": "number",
+      "required": true
+    },
+    "leg_type": {
+      "type": "string",
+      "required": true
+    },
+    "driver_id": {
+      "type": "number",
+      "required": true
+    },
+    "deadline": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "pickup": {
+      "type": "String",
+      "required": true
+    },
+    "pu_time": {
+      "type": "String",
+      "required": true
+    },
+    "delivery": {
+      "type": "string",
+      "required": true
+    },
+    "dl_time": {
+      "type": "string",
+      "required": true
+    },
+    "est_miles": {
+      "type": "number",
+      "required": true
+    },
+    "dmg": {
+      "type": "String",
+      "required": true
+    },
+    "container_id": {
+      "type": "number",
+      "required": true
+    },
+    "chassis_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

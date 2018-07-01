@@ -1,0 +1,39 @@
+{
+  "name": "city_master",
+  "plural": "cities",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "city_id": {
+      "type": "number",
+      "id": true,
+      "generated": false
+    },
+    "city_code": {
+      "type": "string",
+      "required": true
+    },
+    "city_name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "cities": {
+      "type": "belongsTo",
+      "model": "state",
+      "foreignKey": "state_code"
+    },
+    "vendors": {
+      "type": "hasMany",
+      "model": "vendor_master",
+      "foreignKey": "city_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

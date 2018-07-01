@@ -1,0 +1,24 @@
+{
+  "name": "ordertype_master",
+  "plural": "ordertypes",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "order_type": {
+      "type": "String",
+      "id": true,
+      "generated": false,
+      "required": true
+    },
+    "order_type_cat": {
+      "type": "String"
+      }
+    },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

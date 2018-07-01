@@ -1,0 +1,24 @@
+{
+  "name": "locationtype_master",
+  "plural": "locationtypes",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "location_type": {
+      "type": "String",
+      "id": true,
+      "generated": false,
+      "required": true
+    },
+    "location_type_cat": {
+      "type": "String"
+      }
+    },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
